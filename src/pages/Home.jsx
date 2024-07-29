@@ -29,9 +29,9 @@ function Home() {
 
   return (
     <>
-    <select value={select} onChange={(e) => setSelect(e.target.value)} name="" id="">
+    <select className="select" value={select} onChange={(e) => setSelect(e.target.value)} name="" id="">
       <option value="">все</option>
-      <option value="category?category=cредний">средний</option>
+      <option value="category?category=средний">средний</option>
       <option value="category?category=известный">известный</option>
       <option value="category?category=не популярен">непопулярный</option>
     </select>
