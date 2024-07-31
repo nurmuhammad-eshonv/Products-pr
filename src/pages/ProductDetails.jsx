@@ -64,11 +64,11 @@ function ProductDetails() {
         </p>
         <p className="prices pricesD">Prices</p>
         <div className="price priceD">
-          <button>NEW: {item.newPrice}$</button>
-          <button>OLD: {item.oldPrice}$</button>
+          <button className="buttonn">NEW: {item.newPrice}$</button>
+          <button className="buttonn">OLD: {item.oldPrice}$</button>
         </div>
         <p className="id">{item.id}</p>
-        <button onClick={handleback} className="backBtn">
+        <button onClick={handleback} className="backBtn buttonn">
           {" "}
           <FaArrowLeft />
           back

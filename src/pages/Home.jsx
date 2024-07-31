@@ -2,6 +2,8 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react";
 import Card from "../components/Card/Card";
+import { useRef } from "react";
+
 function Home() {
 
 
@@ -19,7 +21,7 @@ function Home() {
       console.log(err);
     }
   }
-  useEffect(() => {
+useEffect(() => {
     getDataFromApi(`https://cars-pagination.onrender.com/products/${select}`).then(
       (data) => {
         setProduct(data);
@@ -28,13 +30,13 @@ function Home() {
   }, [select]);
 
   return (
-    <>
-    <select className="select" value={select} onChange={(e) => setSelect(e.target.value)} name="" id="">
-      <option value="">все</option>
-      <option value="category?category=средний">средний</option>
-      <option value="category?category=известный">известный</option>
-      <option value="category?category=не популярен">непопулярный</option>
-    </select>
+      <>
+      <select className="select" value={select} onChange={(e) => setSelect(e.target.value)} name="" id="">
+        <option value="">все</option>
+        <option value="category?category=средний">средний</option>
+        <option value="category?category=известный">известный</option>
+        <option value="category?category=не популярен">непопулярный</option>
+      </select>
       <div className="big">
         {product.length > 0 &&
           product.map((prod, index) => {

@@ -16,8 +16,8 @@ function Card(props) {
         </p>
         <p className="prices">Prices</p>
         <div className="price">
-          <button>{newPrice}$</button>
-          <button>{oldPrice}$</button>
+          <button className="buttonn">{newPrice}$</button>
+          <button className="buttonn">{oldPrice}$</button>
         </div>
         <p>{id}</p>
       </div>

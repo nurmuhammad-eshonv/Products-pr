@@ -100,7 +100,7 @@ body{
   margin-bottom: -4px;
 }
 
-button {
+.buttonn {
   --glow-color: rgb(247, 240, 240);
   --glow-spread-color: rgba(34, 33, 34, 0.781);
   --enhanced-glow-color: rgb(239, 238, 240);
@@ -119,10 +119,11 @@ button {
     inset 0 0 0.75em 0.25em var(--glow-color);
   text-shadow: 0 0 0.5em var(--glow-color);
   position: relative;
+  text-align: center;
   transition: all 0.3s;
 }
 
-button::after {
+.buttonn::after {
   pointer-events: none;
   content: "";
   position: absolute;
@@ -135,7 +136,7 @@ button::after {
   transform: perspective(1.5em) rotateX(35deg) scale(1, 0.6);
 }
 
-button:hover {
+.buttonn:hover {
   color: var(--btn-color);
   background-color: var(--glow-color);
   box-shadow: 0 0 1em 0.25em var(--glow-color),
@@ -143,7 +144,7 @@ button:hover {
     inset 0 0 0.75em 0.25em var(--glow-color);
 }
 
-button:active {
+.buttonn:active {
   box-shadow: 0 0 0.6em 0.25em var(--glow-color),
     0 0 2.5em 2em var(--glow-spread-color),
     inset 0 0 0.5em 0.25em var(--glow-color);

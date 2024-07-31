@@ -1,0 +1,83 @@
+.form {
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background: #fff;
+  }
+  body{
+    padding-top: 40px;
+  }
+  .title {
+    font-size: 2em;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .message {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #666;
+  }
+  
+  .flex {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 15px;
+    position: relative;
+  }
+  
+  .input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  .input:focus {
+    border-color: #a268ff;
+    outline: none;
+  }
+  
+  label span {
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    background: #fff;
+    padding: 0 5px;
+    font-size: 0.9em;
+    color: #666;
+  }
+  
+  .submit {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #a268ff;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+  }
+  
+  .submit:hover {
+    background-color: #7e54ff;
+  }
+  
+  .signin {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .signin a {
+    color: #a268ff;
+    text-decoration: none;
+  }
+  
